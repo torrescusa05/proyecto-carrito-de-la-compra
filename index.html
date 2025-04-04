@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <script src="js/slide.js"></script>
     <!--Contenedor de contacto (Basado en Plantillas de WordPress)-->
     <div class="contacto">
         <div class="contacto2">
@@ -27,37 +28,60 @@
     </header>
     <!--Menú de navegación-->
     <nav>
-        <div><a href="">Conócenos</a></div>
+        <div><a href="#conoce">Conócenos</a></div>
         <div><a href="">Productos de temporada</a></div>
         <div><a href="">Contacto</a></div>
     </nav>
-    <!--Slider-->
-    <div class="slide">
-        <div class="imagenes degradado">
-            <div class="numero">1 / 3</div>
-            <img src="img1.jpg" style="width:100%">
-            <div class="subtexto">Lore</div>
+    <!--Diapositivas-->
+    <div class="contenedor-diapositiva">
+        <div class="diapositiva degradado">
+            <img src="image/cigalas.jpg" class="imagen-diapositiva">
+            <div class="texto"><p>Marisco a buen precio</p></div>
         </div>
-        <div class="imagenes degradado">
-            <div class="numero">1 / 3</div>
-            <img src="img2.jpg" style="width:100%">
-            <div class="subtexto">Lorem</div>
+        <div class="diapositiva degradado">
+            <img src="image/puerto.jpg" class="imagen-diapositiva">
+            <div class="texto"><p>Nuestro querido Río Carreras con la Punta del Caimán</p></div>
         </div>
-        <div class="imagenes degradado">
-            <div class="numero">1 / 3</div>
-            <img src="img2.jpg" style="width:100%">
-            <div class="subtexto">Lorem</div>
+        <div class="diapositiva degradado">
+            <img src="image/pescaderia.jpg" class="imagen-diapositiva">
+            <div class="texto"><p>Desde la lonja a tu plato</p></div>
         </div>
-        <!--Botones del Slide-->
-        <a class="anterior" onclick="movimientoslide(-1)">&#10094;</a>
-        <a class="siguiente" onclick="movimientoslide(1)">&#10095;</a>
+        <a class="previo" onclick="cambiarDiapositiva(-1)">&#10094;</a>
+        <a class="siguiente" onclick="cambiarDiapositiva(1)">&#10095;</a>
     </div>
-    <br>
-    <!--Circulos slide-->
-    <div style="text-align:center">
-        <span class="circulo" onclick="slideactual(1)"></span>
-        <span class="circulo" onclick="slideactual(2)"></span>
-        <span class="circulo" onclick="slideactual(3)"></span>
+    <div class="indicador">
+        <span class="circulo" onclick="seleccionarDiapositiva(1)"></span>
+        <span class="circulo" onclick="seleccionarDiapositiva(2)"></span>
+        <span class="circulo" onclick="seleccionarDiapositiva(3)"></span>
     </div>
+    <!--Conócenos-->
+    <h1 id="conoce">Conócenos...</h1>
+    <main>
+        <div class="conocenos">
+            <div>
+                <img src="image/barco.jpg" id="barco">
+            </div>
+            <article>
+                <h2>Los Orígenes de la Pesca en Isla Cristina</h2>
+                <p>
+                    Isla Cristina, un pintoresco pueblo en la costa de Huelva, España, tiene una rica tradición
+                    pesquera que se remonta siglos atrás. La localidad, situada en la desembocadura del río Odiel
+                    y rodeada por el mar, ha sido históricamente un punto clave para la pesca en la región.
+                    La cercanía al mar y la abundancia de recursos marinos han permitido que Isla Cristina se
+                    establezca como un centro neurálgico de la pesca, que sigue siendo uno de sus pilares
+                    económicos y culturales.
+                </p>
+                <p>
+                    La historia pesquera de Isla Cristina comienza en tiempos antiguos, cuando los pescadores 
+                    locales utilizaban métodos tradicionales para capturar los productos del mar. 
+                    La pesca artesanal, realizada con embarcaciones pequeñas conocidas como “bateas”, 
+                    ha sido el corazón de la comunidad durante siglos. Estas embarcaciones, manejadas por 
+                    pescadores expertos, salían al mar temprano en la mañana para pescar atunes, sardinas, 
+                    calamares y otros frutos marinos que eran consumidos localmente y exportados a otras 
+                    partes del país.
+                </p>
+            </article>
+        </div>
+    </main>
 </body>
 </html>

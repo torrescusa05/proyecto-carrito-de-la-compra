@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /*Estilo global*/
+* {box-sizing:border-box}
+
 body {
     margin: 0;
     padding: 0;
@@ -40,10 +42,11 @@ a:hover {
 
 /*Cabecera de la página*/
 header {
-    background-color: rgb(43, 142, 255);
+    background:linear-gradient(darkblue,rgb(12, 122, 247));
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 header img {
@@ -54,39 +57,27 @@ header img {
 nav {
     background-color: rgb(12, 122, 247);
     font-family: Rubik;
-    font-size: 25px;
-    padding: 20px;
+    font-size: 22px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-/*Slide*/
-    /* Contenedor slide*/
-.slide {
-    max-width: 1000px;
+/*Contenedor diapositiva*/
+.contenedor-diapositiva {  
+    max-width: 100%;
     position: relative;
-    margin: auto;
 }
 
-/* Esconder imágenes */
-.imagenes {
+.diapositiva {
     display: none;
 }
 
-/*Transición slide*/
-.degradado {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-/*Botones de avance y retroceso*/
-.anterior, .siguiente {
-    cursor: pointer;
+/*Botones de control laterales*/
+.previo, .siguiente {
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -22px;
     padding: 16px;
     color: white;
     font-weight: bold;
@@ -94,6 +85,9 @@ nav {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    cursor: pointer;
+    width: auto;
+    margin-top: -22px;
 }
 
 .siguiente {
@@ -101,23 +95,24 @@ nav {
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.previo:hover, .siguiente:hover {
     background-color: rgba(0,0,0,0.8);
 }
 
-/*Subtexto de las imágenes*/
-.subtexto {
-    color: #f2f2f2;
+/* Texto abajo */
+.texto {
+    color: #ffee00;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center;
+    font-family: 'Poppins';
+    font-weight: 700;
 }
 
-/*Indicadores del slide*/
-/* The dots/bullets/indicators */
+/*Indicadores*/
 .circulo {
     cursor: pointer;
     height: 15px;
@@ -129,6 +124,80 @@ nav {
     transition: background-color 0.6s ease;
 }
 
-.activado, .circulo:hover {
+.activo, .dot:hover {
     background-color: #717171;
+}
+
+.indicador {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*Degradado de entrada*/
+.degradado {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/*Imágenes*/
+.imagen-diapositiva {
+    width: 100%;
+    height: 500px;
+}
+
+/*Conócenos*/
+h1 {
+    font-family: 'Poppins';
+    font-size: 40px;
+    text-align: center;
+    padding: 10px 10px;
+    background: linear-gradient(180deg,white, rgb(12, 122, 247));
+    margin: 0;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(12, 122, 247);
+    padding-top: 30px;
+}
+.conocenos {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+#barco {
+    width: 50vh;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+article {
+    width: 65vh;
+    text-align: justify;
+}
+
+article h2 {
+    font-family: 'Outfit';
+    font-size: 25px;
+
+}
+article p {
+        font-family: 'Poppins';
+}
+
+article p::first-letter {
+    font-size: 20px;
 }
