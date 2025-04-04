@@ -1,0 +1,134 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Estilo global*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Contenedor contacto*/
+.contacto {
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Outfit";
+    font-weight: 500;
+}
+
+.contacto img {
+    width: 30px;
+    height: 30px;
+}
+
+.contacto2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: rgb(236, 178, 30);
+}
+
+/*Cabecera de la página*/
+header {
+    background-color: rgb(43, 142, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header img {
+    width: 500px;
+}
+
+/*Menú de navegación*/
+nav {
+    background-color: rgb(12, 122, 247);
+    font-family: Rubik;
+    font-size: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*Slide*/
+    /* Contenedor slide*/
+.slide {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Esconder imágenes */
+.imagenes {
+    display: none;
+}
+
+/*Transición slide*/
+.degradado {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/*Botones de avance y retroceso*/
+.anterior, .siguiente {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.siguiente {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/*Subtexto de las imágenes*/
+.subtexto {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/*Indicadores del slide*/
+/* The dots/bullets/indicators */
+.circulo {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.activado, .circulo:hover {
+    background-color: #717171;
+}
