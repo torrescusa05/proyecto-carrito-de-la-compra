@@ -7,6 +7,10 @@
 body {
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
 }
 
 /*Contenedor contacto*/
@@ -68,6 +72,7 @@ nav {
 .contenedor-diapositiva {  
     max-width: 100%;
     position: relative;
+    background-color: rgb(12, 122, 247);
 }
 
 .diapositiva {
@@ -131,6 +136,7 @@ nav {
 .indicador {
     text-align: center;
     padding-top: 10px;
+    background-color: rgb(12, 122, 247);
 }
 
 /*Degradado de entrada*/
@@ -156,7 +162,7 @@ h1 {
     font-size: 40px;
     text-align: center;
     padding: 10px 10px;
-    background: linear-gradient(180deg,white, rgb(12, 122, 247));
+    background-color: rgb(12, 122, 247);
     margin: 0;
     color: white;
 }
@@ -164,18 +170,25 @@ h1 {
 main {
     display: flex;
     justify-content: center;
-    background-color: rgb(12, 122, 247);
+    background:linear-gradient(180deg, rgb(12, 122, 247), darkblue);
     padding-top: 30px;
 }
 .conocenos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 90%;
     justify-content: space-around;
     background-color: white;
     padding: 20px;
     border-radius: 20px;
     align-items: center;
+}
+
+.origenes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
 }
 
 #barco {
@@ -185,19 +198,68 @@ main {
 }
 
 article {
-    width: 65vh;
+    width: 55vh;
     text-align: justify;
 }
 
 article h2 {
     font-family: 'Outfit';
     font-size: 25px;
-
 }
+
 article p {
         font-family: 'Poppins';
 }
 
 article p::first-letter {
     font-size: 20px;
+}
+
+.torrescusa {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+#faro {
+    border-radius: 10px;
+}
+
+.torrescusa h2 {
+    font-family: 'Outfit';
+    font-size: 25px;
+}
+
+.torrescusa p {
+    font-family: 'Poppins';
+    text-align: justify;
+}
+
+aside {
+    width: 50vh;
+}
+
+/*Contacto*/
+section div {
+    background-color: darkblue;
+    padding-top: 20px;
+    color:white;
+    font-family: Poppins;
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+}
+
+section div .direcciones {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactar {
+    background-color: darkblue;
 }
