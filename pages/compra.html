@@ -27,6 +27,7 @@
                 <h3>Boquerones</h3>
                 <p></p>
                 <p>Precio: <span>3.87 €</span></p>
+                <input type="text" id="kilosboquerones" placeholder="1">
                 <input type="button" value="Añadir al carrito" onclick="boquerones()">
                 <!--Boquerones-->
             </div>
@@ -35,6 +36,7 @@
                 <h3>Acedias</h3>
                 <p></p>
                 <p>Precio: <span>12.10 €</span></p>
+                <input type="text" id="kilosacedias" placeholder="1">
                 <input type="button" value="Añadir al carrito" onclick="acedias()">
                 <!--Acedias-->
             </div>
@@ -43,6 +45,7 @@
                 <h3>Choco</h3>
                 <p></p>
                 <p>Precio: <span>21.00 €</span></p>
+                <input type="number" id="kiloschoco" placeholder="1">
                 <input type="button" value="Añadir al carrito" onclick="choco()">
                 <!--Choco-->
             </div>
@@ -51,6 +54,7 @@
                 <h3>Puntillitas</h3>
                 <p></p>
                 <p>Precio: <span>22.75 €</span></p>
+                <input type="number" id="kilospuntillitas" placeholder="1">
                 <input type="button" value="Añadir al carrito" onclick="puntillitas()">
                 <!--Puntillitas-->
             </div>
@@ -59,6 +63,7 @@
                 <h3>Doradas</h3>
                 <p></p>
                 <p>Precio: <span>9.90 €</span></p>
+                <input type="number" id="kilosdoradas" placeholder="1">
                 <input type="button" value="Añadir al carrito" onclick="doradas()">
                 <!--Doradas-->
             </div>
@@ -67,8 +72,17 @@
                 <h3>Sardinas</h3>
                 <p></p>
                 <p>Precio: <span>15.50 €</span></p>
+                <input type="number" id="kilossardinas" placeholder="1">
                 <input type="button" value="Añadir al carrito" onclick="sardinas()">
                 <!--Sardinas-->
+            </div>
+            <div class="carrito">
+                <h2>Carrito</h2>
+                <ul  id="carrito" class=""></ul>
+                <p>No hay nada dentro del carrito</p>
+                <hr>
+                <p class="total">Total: <span id="total"></span>&euro;</p>
+                <input type="button" onclick="eliminarcarro()" value="Eliminar carrito">
             </div>
         </section>
     </main>
