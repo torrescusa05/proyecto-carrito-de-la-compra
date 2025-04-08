@@ -99,3 +99,18 @@ main section {
     grid-column: 4;
     grid-row: 1 / span 2;
 }
+
+.contador {
+    width: 40px;
+    text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
