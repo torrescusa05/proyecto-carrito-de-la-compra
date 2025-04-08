@@ -1,7 +1,7 @@
 //DOMContentLoaded --> Espera a que cargue toda la estructura del documento,
 //                      y después ejecuta el código de JS.
 
-let indiceDeDiapositivaActual = 1;
+var indiceDeDiapositivaActual = 1;
 document.addEventListener("DOMContentLoaded", function()
 {
     mostrarDiapositiva(indiceDeDiapositivaActual);
@@ -19,9 +19,9 @@ function seleccionarDiapositiva(n)
 
 function mostrarDiapositiva(n) 
 {
-    let i;
-    let diapositivas = document.getElementsByClassName("diapositiva");
-    let puntos = document.getElementsByClassName("circulo");
+    var i;
+    var diapositivas = document.getElementsByClassName("diapositiva");
+    var puntos = document.getElementsByClassName("circulo");
     if (n > diapositivas.length) 
     { 
         indiceDeDiapositivaActual = 1; 

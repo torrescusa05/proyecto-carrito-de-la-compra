@@ -2,39 +2,105 @@
 var listadelacompra = [];
 var preciosdelacompra = [];
 
+
 function boquerones() 
 {
     var precio = 3.87;
-    var anadirprecio = preciosdelacompra.push(precio);
-    var anadirlistacompra = listadelacompra.push('Kilo de boquerones');
+    var kilos = parseInt(document.getElementById('kilosboquerones').value);
+    var totalprecio;
+    if (isNaN(kilos))
+    {
+        alert('Por favor introduzca un número de kilos válidos (1,2,3,...)')
+    }
+    else
+    {
+        totalprecio = precio * kilos;
+        var anadirprecio = preciosdelacompra.push(totalprecio);
+        var anadirlistacompra = listadelacompra.push('Boquerones');
+    }
 }
 
-function acedias() {
+function acedias() 
+{
     var precio = 12.10;
-    var anadirprecio = preciosdelacompra.push(precio);
-    var anadirlistacompra = listadelacompra.push('Kilo de acedias');
+    var kilos = parseInt(document.getElementById('kilosacedias').value);
+    var totalprecio;
+    if (kilos == isNaN)
+    {
+        alert('Por favor introduzca un número de kilos válidos (1,2,3,...)')
+    }
+    else
+    {
+        totalprecio = precio * kilos;
+        var anadirprecio = preciosdelacompra.push(totalprecio);
+        var anadirlistacompra = listadelacompra.push('Acedias');
+    }
 }
 
-function choco() {
+function choco() 
+{
     var precio = 21.00;
-    var anadirprecio = preciosdelacompra.push(precio);
-    var anadirlistacompra = listadelacompra.push('Kilo de choco');
+    var kilos = parseInt(document.getElementById('kiloschoco').value);
+    var totalprecio;
+    if (kilos == isNaN)
+    {
+        alert('Por favor introduzca un número de kilos válidos (1,2,3,...)')
+    }
+    else
+    {
+        totalprecio = precio * kilos;
+        var anadirprecio = preciosdelacompra.push(totalprecio);
+        var anadirlistacompra = listadelacompra.push('Choco');
+    }
 }
 
-function puntillitas() {
+function puntillitas() 
+{
     var precio = 22.75;
-    var anadirprecio = preciosdelacompra.push(precio);
-    var anadirlistacompra = listadelacompra.push('Kilo de puntillitas');
+    var kilos = parseInt(document.getElementById('kilospuntillitas').value);
+    var totalprecio;
+    if (kilos == isNaN)
+    {
+        alert('Por favor introduzca un número de kilos válidos (1,2,3,...)')
+    }
+    else
+    {
+        totalprecio = precio * kilos;
+        var anadirprecio = preciosdelacompra.push(totalprecio);
+        var anadirlistacompra = listadelacompra.push('Puntillitas');
+    }
 }
 
-function doradas() {
+function doradas() 
+{
     var precio = 9.90;
-    var anadirprecio = preciosdelacompra.push(precio);
-    var anadirlistacompra = listadelacompra.push('Kilo de doradas');
+    var kilos = parseInt(document.getElementById('kilosacedias').value);
+    var totalprecio;
+    if (kilos == isNaN)
+    {
+        alert('Por favor introduzca un número de kilos válidos (1,2,3,...)')
+    }
+    else
+    {
+        totalprecio = precio * kilos;
+        var anadirprecio = preciosdelacompra.push(totalprecio);
+        var anadirlistacompra = listadelacompra.push('Doradas');
+    }
 }
 
-function sardinas() {
+function sardinas() 
+{
     var precio = 15.50;
-    var anadirprecio = preciosdelacompra.push(precio);
-    var anadirlistacompra = listadelacompra.push('Kilo de sardinas');
+    var kilos = parseInt(document.getElementById('kilosacedias').value);
+    var totalprecio;
+    if (kilos == isNaN)
+    {
+        alert('Por favor introduzca un número de kilos válidos (1,2,3,...)')
+    }
+    else
+    {
+        totalprecio = precio * kilos;
+        var anadirprecio = preciosdelacompra.push(totalprecio);
+        var anadirlistacompra = listadelacompra.push('Sardinas');
+    }
 }
