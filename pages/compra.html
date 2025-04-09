@@ -22,67 +22,95 @@
     <main>
         <h1>Productos de temporada</h1>
         <section>
-            <div>
-                <img src="">
-                <h3>Boquerones</h3>
-                <p></p>
-                <p>Precio: <span>3.87 €</span></p>
-                <input type="text" id="kilosboquerones" placeholder="1">
-                <input type="button" value="Añadir al carrito" onclick="boquerones()">
+            <div class="cajas">
                 <!--Boquerones-->
+                <img src="../image/boquerones.jpg">
+                <h3>Boquerones</h3>
+                <p>Los boquerones de Isla Cristina son pequeños pescados frescos, muy apreciados por su sabor delicado y su textura suave, preparados principalmente en vinagre, fritos o en escabeche.</p>
+                <p class="llamativo">Precio: <span>3.87 € / Kilo</span></p>
+                <div class="botones">
+                    <label>Nº de kilos: </label><input type="number" id="kilosboquerones" value="1" min="0" class="contador"><br>
+                    <div class="centrar">
+                        <input type="button" value="Añadir al carrito" onclick="anadirproducto(0)">
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="">
-                <h3>Acedias</h3>
-                <p></p>
-                <p>Precio: <span>12.10 €</span></p>
-                <input type="text" id="kilosacedias" placeholder="1">
-                <input type="button" value="Añadir al carrito" onclick="acedias()">
+            <div class="cajas">
                 <!--Acedias-->
+                <img src="../image/acedias.jpg">
+                <h3>Acedias</h3>
+                <p>Las acedias son pequeños peces de agua salada, típicos de la costa mediterránea, muy apreciados por su sabor delicado. Se suelen consumir fritos, en escabeche o a la plancha.</p>
+                <p class="llamativo">Precio: <span>12.10 €  / Kilo</span></p>
+                <div class="botones">
+                    <label>Nº de kilos: </label><input type="number" id="kilosacedias" value="1" min="0" class="contador">
+                    <div class="centrar">
+                        <input type="button" value="Añadir al carrito" onclick="anadirproducto(1)">
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="">
+            <div class="cajas">
+                <img src="../image/choco.jpg">
                 <h3>Choco</h3>
-                <p></p>
-                <p>Precio: <span>21.00 €</span></p>
-                <input type="number" id="kiloschoco" placeholder="1">
-                <input type="button" value="Añadir al carrito" onclick="choco()">
+                <p>El choco es un molusco cefalópodo similar al calamar, muy popular en la cocina andaluza. Su carne es tierna y sabrosa, ideal para freír, a la plancha o en guisos. Es muy apreciado por su versatilidad y su intenso sabor a mar.</p>
+                <p class="llamativo">Precio: <span>21.00 €  / Kilo</span></p>
+                <div id="botones">
+                    <label>Nº de kilos: </label><input type="number" id="kiloschoco" value= "1" min="0" class="contador">
+                    <div class="centrar">
+                        <input type="button" value="Añadir al carrito" onclick="anadirproducto(2)">
+                    </div>
+                </div>
                 <!--Choco-->
             </div>
-            <div>
-                <img src="">
+            <div class="cajas">
+                <img src="../image/puntillitas.jpg">
                 <h3>Puntillitas</h3>
-                <p></p>
-                <p>Precio: <span>22.75 €</span></p>
-                <input type="number" id="kilospuntillitas" placeholder="1">
-                <input type="button" value="Añadir al carrito" onclick="puntillitas()">
+                <p>Las puntillitas son pequeños calamares de la costa, muy suaves y tiernos. Se suelen freír, ofreciendo un sabor delicado y jugoso. Son un aperitivo popular en la cocina mediterránea.</p>
+                <p class="llamativo">Precio: <span>22.75 €  / Kilo</span></p>
+                <div id="botones">
+                    <label>Nº de kilos: </label><input type="number" id="kilospuntillitas" value="1" min="0" class="contador">
+                    <div class="centrar">
+                        <input type="button" value="Añadir al carrito" onclick="anadirproducto(3)">
+                    </div>
+                </div>
                 <!--Puntillitas-->
             </div>
-            <div>
-                <img src="">
+            <div class="cajas">
+                <img src="../image/doradas.jpg">
                 <h3>Doradas</h3>
-                <p></p>
-                <p>Precio: <span>9.90 €</span></p>
-                <input type="number" id="kilosdoradas" placeholder="1">
-                <input type="button" value="Añadir al carrito" onclick="doradas()">
+                <p>Las doradas son pescados de agua salada, conocidos por su carne blanca, jugosa y delicada. Se caracterizan por su sabor suave y su textura firme, lo que las hace perfectas para asar, a la parrilla o al horno.</p>
+                <p class="llamativo">Precio: <span>9.90 €  / Kilo</span></p>
+                <div id="botones">
+                    <label>Nº de kilos: </label><input type="number" id="kilosdoradas" value="1" min="0" class="contador">
+                    <div class="centrar">
+                        <input type="button" value="Añadir al carrito" onclick="anadirproducto(4)">
+                    </div>
+                </div>
                 <!--Doradas-->
             </div>
-            <div>
-                <img src="">
+            <div class="cajas">
+                <img src="../image/sardinas.jpg">
                 <h3>Sardinas</h3>
-                <p></p>
-                <p>Precio: <span>15.50 €</span></p>
-                <input type="number" id="kilossardinas" placeholder="1">
-                <input type="button" value="Añadir al carrito" onclick="sardinas()">
+                <p>Las sardinas son pescados pequeños y sabrosos, con una carne jugosa y rica en nutrientes. Se consumen comúnmente a la parrilla, fritas o en escabeche, y son muy apreciadas por su sabor intenso y su alto contenido en ácidos grasos.</p>
+                <p class="llamativo">Precio: <span>15.50 €  / Kilo</span></p>
+                <div id="botones">
+                    <label>Nº de kilos: </label><input type="number" id="kilossardinas" value="1" min="0" class="contador">
+                    <div class="centrar">
+                        <input type="button" value="Añadir al carrito" onclick="anadirproducto(5)">
+                    </div>
+            </div>
                 <!--Sardinas-->
             </div>
             <div class="carrito">
-                <h2>Carrito</h2>
-                <ul  id="carrito" class=""></ul>
-                <p>No hay nada dentro del carrito</p>
+                <div class="titulocarrito">
+                    <h2>Carrito</h2><img src="../image/carrito.png">
+                </div>
+                <ul id="carrito"></ul>
                 <hr>
                 <p class="total">Total: <span id="total"></span>&euro;</p>
-                <input type="button" onclick="eliminarcarro()" value="Eliminar carrito">
+                <div class="botonescarrito">
+                    <input type="button" onclick="eliminarcarro()" value="Eliminar carrito">
+                    <a href="" id="validar"></a>
+                </div>
             </div>
         </section>
     </main>
