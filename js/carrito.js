@@ -8,7 +8,6 @@ const productos = [
     { id: 4, nombre: "Doradas", precio: 9.90 },
     { id: 5, nombre: "Sardinas", precio: 15.50 }
 ];
-
 //Carga los elementos del carrito, buscando a través del item 'carrito' en local storage
 //guardado cada vez que añadimos algo. JSON.parse --> Nos permite transformar una cadena
 //a objeto, en la variable carrito vemos que los elementos del localstorage los guarda
@@ -80,7 +79,7 @@ function mostrarCarrito()
         carrito.forEach(item => 
         {
             const productohtml = document.createElement('li');
-            productohtml.innerHTML = `${item.nombre} x ${item.cantidad}Kg - ${item.precio * item.cantidad} € 
+            productohtml.innerHTML = `${item.nombre} x ${item.cantidad}Kg - ${((item.precio) * item.cantidad).toFixed(2).replace('.',',')} € 
                                     <button onclick="eliminarProducto(${item.id})">X</button>`;
             carritohtml.appendChild(productohtml);
             total += item.precio * item.cantidad;

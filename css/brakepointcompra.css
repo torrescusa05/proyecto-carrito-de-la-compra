@@ -73,7 +73,7 @@
         width: 400px;
     }
 
-    @media (max-width: 1250px) {
+    @media (max-width: 1280px) {
         .carrito {
             position: static;
         }
@@ -112,7 +112,7 @@
     }
 
     header img {
-        width: 100%;
+        width: 300px;
     }
 
     header div {
