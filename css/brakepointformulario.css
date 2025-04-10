@@ -1,0 +1,123 @@
+@media (max-height: 840px) {
+    header img {
+        width: 300px;
+    }
+    
+    header div {
+        max-width: 100%;
+        width: 400px;
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        background:linear-gradient(rgb(0, 0, 0),rgb(70, 69, 69));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content:center;
+        position: sticky;
+        top: 0%;
+        z-index: 2;
+        width: 100%;
+        min-width: 400px;
+    }
+
+    header img {
+        width: 300px;
+    }
+
+    header div {
+        width: 100%;
+    }
+
+    .indica nav a{
+        color:white;
+        font-size: 30px;
+        font-family: Outfit;
+        text-decoration: none;
+        transition: color 0.2s ease-in-out;
+    }
+    
+    .indica nav a:hover{
+        color: rgb(236, 178, 30);
+    }
+    
+    .indica {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    select {
+        width: 100px;
+    }
+
+    section {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .rotura {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 541px) {
+    .indica nav a {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .container2 div {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .container2 button {
+        border-color: black;
+        border-style: dashed;
+    }
+}
+
+@media (max-width: 900px)
+{
+    main section {
+        width: 100%;
+    }
+
+    main {
+        min-width: 400px;
+    }
+}
+

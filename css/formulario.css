@@ -1,0 +1,211 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Estilos globales*/
+    * {
+        box-sizing:border-box;  
+        max-width: 100%; 
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        min-width: 300px;
+        max-height: 100%;
+        min-height: 100%;
+    }
+
+    input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }                
+    
+    input[type="number"] { 
+        -moz-appearance: textfield;
+    }
+
+/*Cabecera de la página*/
+    header {
+        background:linear-gradient(rgb(0, 0, 0),rgb(70, 69, 69));
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0%;
+        z-index: 2;
+    }
+
+    /*Imagen Torrescusa Pescaderías*/
+        header img {
+            width: 400px;
+        }
+        
+        header div {
+            max-width: 100%;
+            width:40%;
+        }
+
+    /*Menú de navegación 'Inicio'*/
+        .indica nav a{
+            color:white;
+            font-size: 25px;
+            font-family: Outfit;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .indica nav a:hover{
+            color: rgb(236, 178, 30);
+        }
+
+        .indica {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 90%;
+            margin-right: 55px;
+        }
+
+        nav{
+            margin-right: 40px;
+        }
+
+/*Main y cuerpo del documento*/
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 30px;
+        background: linear-gradient(180deg, white, white, white, white, white);
+    }
+
+    /*Título de pescado de temporada*/
+        h1 {
+            font-family: 'Poppins';
+            font-size: 50px;
+            max-width: 100%;
+            background:linear-gradient(180deg,rgb(70, 69, 69), white);
+            text-align: center;
+            padding: 50px 10px;
+            margin: 0;
+            color: rgb(255, 255, 255);
+        }
+
+/*Section y cajas del formulario*/
+    main div section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    form{
+        width: 80%;
+        font-family: Outfit;
+        display: grid;
+        row-gap: 20px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 20px;
+        background-color: whitesmoke;
+        padding: 0 30px 30px 30px;
+        border-radius: 20px;
+    }
+
+    input {
+        width: 20vh;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+
+    form div h2 {
+        font-family: Poppins;
+        font-size: 25px;
+    }
+
+    .caja {
+        display: grid;
+        grid-template-columns: 16% 25% 12% auto;
+    }
+
+    .sociedad {
+        grid-template-columns: 18% 23% 12% auto;
+    }
+
+    .dni {
+        grid-template-columns: 16% 25% 12% 18.5%;
+    }
+
+    .direccion {
+        grid-template-columns: 16% 25% 12% 10%;
+    }
+
+    .escalera {
+        grid-template-columns: 16% 25% 18% 5%;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        background-color: whitesmoke;
+        padding: 0 30px 30px 30px;
+        border-radius: 20px; 
+    }
+
+    .container2 div {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .container2 .caja1{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container2 button {
+        background-color: rgb(236, 178, 30);
+        font-size: 18px;
+        padding: 15px;
+        border: transparent;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color, color 0.2s ease-in-out;
+    }
+
+    .container2 button:hover {
+        background-color: rgb(224, 161, 0);
+        color:white;
+        transform: translateY(-1px) scale(1.05);    
+    }
+
+    .target {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #pagar {
+        margin: 20px;
+        background-color: rgb(8, 201, 8);
+        font-size: 16px;
+        padding: 15px;
+        border: transparent;
+        border-radius: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color, color 0.2s ease-in-out;
+    }

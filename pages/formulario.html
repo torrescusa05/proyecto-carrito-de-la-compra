@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceso de compra</title>
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="../css/brakepointformulario.css">
+</head>
+<body>
+    <script src="../js/validarcompra.js"></script>
+    <header>
+        <div>
+            <img src="../image/logo.png">
+        </div>
+        <div class="indica">
+            <nav>
+                <a href="../index.html">Inicio</a>
+            </nav>
+            <!--<button onclick="abrircarrito()"><img src="../image/carrito.png"></button>-->
+        </div>
+    </header>
+    <main>
+        <h1>Validar compra</h1>
+        <div>
+            <section>
+                <form>
+                    <div class=" container datos">
+                        <h2>Datos personales / fiscales </h2>
+                        <div class="caja">
+                            <label>Nombre:</label>
+                            <input type="text" id="nombre" placeholder="José" maxlength="25" required>
+                            <label>Apellidos:</label>
+                            <input type="text" id="apellidos" placeholder="García Torrescusa" maxlength="50"required>
+                        </div>
+                        <div class="caja sociedad">
+                            <label>Nombre sociedad*:</label>
+                            <input type="text" id="asociacion" placeholder="Torrescusa S.L">
+                            <label>CIF*:</label>
+                            <input type="text" id="cif">
+                        </div>
+                        <div class="caja dni">
+                            <label>DNI/NIF:</label>
+                            <input type="text" id="dni" placeholder="00000000A" required>
+                            <label>Provincia:</label>
+                            <select>
+                                <option value="alava">Álava</option>
+                                <option value="albacete">Albacete</option>
+                                <option value="alicante">Alicante</option>
+                                <option value="almeria">Almería</option>
+                                <option value="asturias">Asturias</option>
+                                <option value="avila">Ávila</option>
+                                <option value="badajoz">Badajoz</option>
+                                <option value="barcelona">Barcelona</option>
+                                <option value="burgos">Burgos</option>
+                                <option value="caceres">Cáceres</option>
+                                <option value="cadiz">Cádiz</option>
+                                <option value="cantabria">Cantabria</option>
+                                <option value="castellon">Castellón</option>
+                                <option value="ceuta">Ceuta</option>
+                                <option value="cordoba">Córdoba</option>
+                                <option value="cuenca">Cuenca</option>
+                                <option value="girona">Girona</option>
+                                <option value="granada">Granada</option>
+                                <option value="guadalajara">Guadalajara</option>
+                                <option value="huelva">Huelva</option>
+                                <option value="huesca">Huesca</option>
+                                <option value="illescas">Illes Balears</option>
+                                <option value="jaen">Jaén</option>
+                                <option value="la-coruna">La Coruña</option>
+                                <option value="la-rioja">La Rioja</option>
+                                <option value="las-palmas">Las Palmas</option>
+                                <option value="leon">León</option>
+                                <option value="lleida">Lleida</option>
+                                <option value="lugo">Lugo</option>
+                                <option value="madrid">Madrid</option>
+                                <option value="malaga">Málaga</option>
+                                <option value="murcia">Murcia</option>
+                                <option value="navarra">Navarra</option>
+                                <option value="ourense">Ourense</option>
+                                <option value="palencia">Palencia</option>
+                                <option value="pontevedra">Pontevedra</option>
+                                <option value="salamanca">Salamanca</option>
+                                <option value="segovia">Segovia</option>
+                                <option value="sevilla">Sevilla</option>
+                                <option value="soria">Soria</option>
+                                <option value="tarragona">Tarragona</option>
+                                <option value="teruel">Teruel</option>
+                                <option value="toledo">Toledo</option>
+                                <option value="valencia">Valencia</option>
+                                <option value="valladolid">Valladolid</option>
+                                <option value="vizcaya">Vizcaya</option>
+                                <option value="zamora">Zamora</option>
+                                <option value="zaragoza">Zaragoza</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h2>Dirección</h2>
+                        <div class="caja direccion">
+                            <label>Dirección:</label>
+                            <input type="text" id="calle" placeholder="13 Rue del Percebe" maxlength="50" required>
+                            <label>Número:</label>
+                            <input type="number" id="numero" placeholder="1" min="1" required>
+                        </div>
+                        <div class="caja escalera">
+                            <label>Código Postal:</label>
+                            <input type="text" id="codigopostal" placeholder="21410" required> 
+                            <label>Escalera y puerta:</label>
+                            <input type="text" id="escalera" placeholder="1º1" required>
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <h2>Datos bancarios</h2>
+                        <div>
+                            <button onclick="mostrarFormulario('tarjeta')" class="pago" id="tarjeta">Tarjeta del banco</button>
+                            <button onclick="mostrarFormulario('cuenta')" class="pago" id="cuenta">Cuenta bancaria</button>
+                        </div>
+                        <div class="caja1" id="aparece"></div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

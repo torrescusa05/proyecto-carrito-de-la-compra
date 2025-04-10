@@ -85,7 +85,7 @@ function mostrarCarrito()
             total += item.precio * item.cantidad;
         });
         totalElemento.innerHTML = total.toFixed(2).replace('.',',');
-        validar.innerHTML = `<button>Confirmar compra</button>`;     
+        validar.innerHTML = `<a href="../pages/formulario.html"><button>Confirmar compra</button></a>`;     
     }
 }
 
