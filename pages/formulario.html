@@ -41,7 +41,8 @@
                         </div>
                         <div class="caja dni">
                             <label>DNI/NIF:</label>
-                            <input type="text" id="dni" placeholder="00000000A" required>
+                            <input type="text" id="dni" placeholder="00000000" required size="8" maxlength="8">
+                            <input type="text" id="letra" placeholder="A" required maxlength="1" size="1" style="width: 50px;">
                             <label>Provincia:</label>
                             <select>
                                 <option value="alava">Álava</option>
@@ -105,7 +106,7 @@
                         </div>
                         <div class="caja escalera">
                             <label>Código Postal:</label>
-                            <input type="text" id="codigopostal" placeholder="21410" required> 
+                            <input type="number" id="codigopostal" placeholder="21410" required maxlength="5" size="5"> 
                             <label>Escalera y puerta:</label>
                             <input type="text" id="escalera" placeholder="1º1" required>
                         </div>

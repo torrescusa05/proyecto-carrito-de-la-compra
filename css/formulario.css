@@ -144,7 +144,7 @@
     }
 
     .dni {
-        grid-template-columns: 16% 25% 12% 18.5%;
+        grid-template-columns: 16% 13% 12% 12% 13%;
     }
 
     .direccion {
