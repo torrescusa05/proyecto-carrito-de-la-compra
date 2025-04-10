@@ -9,8 +9,6 @@ body {
     padding: 0;
     max-width: 100%;
     min-width: 100%;
-    max-height: 100%;
-    min-height: 100%;
 }
 
 /*Contenedor contacto*/
@@ -55,6 +53,7 @@ header {
 
 header img {
     width: 500px;
+    max-width: 100%;
 }
 
 /*Menú de navegación*/
@@ -165,6 +164,7 @@ h1 {
     background-color: rgb(12, 122, 247);
     margin: 0;
     color: white;
+    max-width: 100%;
 }
 
 main {
@@ -188,17 +188,17 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
+    width: 100%;
 }
 
 #barco {
-    width: 50vh;
-    height: 50vh;
+    width: 700px;
     border-radius: 20px;
+    max-width: 100%;
 }
 
 article {
-    width: 55vh;
+    width: 50%;
     text-align: justify;
 }
 
@@ -218,7 +218,7 @@ article p::first-letter {
 .torrescusa {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
     background-color: white;
     padding: 20px;
@@ -228,6 +228,7 @@ article p::first-letter {
 
 #faro {
     border-radius: 10px;
+    max-width: 100%;
 }
 
 .torrescusa h2 {
@@ -241,7 +242,7 @@ article p::first-letter {
 }
 
 aside {
-    width: 50vh;
+    width: 65%;
 }
 
 /*Contacto*/
@@ -266,6 +267,7 @@ section {
 
 #mapa {
     border-radius: 20px;
+    max-width: 100%;
 }
 
 section div .direcciones {

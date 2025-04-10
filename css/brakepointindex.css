@@ -1,0 +1,83 @@
+@media (max-width: 1750px) {
+    #barco {
+        width:600px;
+    }
+
+    aside {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1450px) {
+    #barco {
+        width:500px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #barco {
+        width:400px;
+    }
+
+    aside {
+        width: 40%;
+    }
+
+    #mapa {
+        width:500px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .origenes {
+        flex-direction: column;
+    }
+
+    article {
+        width: 85%;
+    }
+    
+    #barco {
+        width:700px;
+    }
+
+    .torrescusa {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    section {
+        display: grid;
+        grid-template-columns: 90%;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .contacto3 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .eliminar {
+        display: none;
+    }
+}
+
+@media (max-width: 530px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+        font-size: 18px;
+    }
+
+    nav div {
+        margin-bottom: 10px;
+    }
+}
